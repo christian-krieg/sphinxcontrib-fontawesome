@@ -20,8 +20,11 @@ setup(
     author='Sam Redmond',
     author_email='sredmond@stanford.edu',
     # Contents of the package.
-    packages=['sphinxcontrib'],
+    packages=['sphinxcontrib.fontawesome'],
     namespace_packages = ['sphinxcontrib'],
+    package_data = {
+        "sphinxcontrib.fontawesome" : ["icons.json"],
+    },
     include_package_data=True,
     # Supported Python versions. Unlike the classifiers, `pip install` actually
     # checks these constraints and refuses to install projects with mismatches.
